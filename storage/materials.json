@@ -1,0 +1,1196 @@
+{
+    "Iron Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Iron Ore": 5
+        }
+    },
+    "Copper Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Copper Ore": 5
+        }
+    },
+    "Silicon Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Silicon Ore": 5
+        }
+    },
+    "Cobalt Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Cobalt Ore": 5
+        }
+    },
+    "Neodymium Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Neodymium Ore": 5
+        }
+    },
+    "Sathium Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Sathium Ore": 5
+        }
+    },
+    "Erestrum Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Erestrum Ore": 5
+        }
+    },
+    "Zascosium Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Zascosium Ore": 5
+        }
+    },
+    "Gold Ingot": {
+        "type": "Refined",
+        "requires": {
+            "Gold Ore": 5
+        }
+    },
+    "Zascosium Alloy": {
+        "type": "Refined",
+        "requires": {
+            "Erestrum Ingot": 5,
+            "Zascosium Ingot": 5
+        }
+    },
+    "Erestrum Gel": {
+        "type": "Refined",
+        "requires": {
+            "Erestrum Ingot": 2
+        }
+    },
+    "Elemental Pentaxid": {
+        "type": "Refined",
+        "requires": {
+            "Pentaxid": 1
+        }
+    },
+    "Refined Pentaxid": {
+        "type": "Refined",
+        "requires": {
+            "Pentaxid": 1
+        }
+    },
+    "Promethium Pellets": {
+        "type": "Refined",
+        "requires": {
+            "Promethium Ore": 1
+        }
+    },
+    "Water Container": {
+        "type": "Refined",
+        "requires": {
+            "Ice Blocks": 5
+        }
+    },
+    "Purified Water": {
+        "type": "Refined",
+        "requires": {
+            "Water Container": 1
+        }
+    },
+    "Plant Fibers": {
+        "type": "Refined",
+        "requires": {
+            "Wood Logs": 1
+        }
+    },
+    "Cement": {
+        "type": "Refined",
+        "requires": {
+            "Stone Dust": 2
+        }
+    },
+    "Wood Planks": {
+        "type": "Refined",
+        "requires": {
+            "Wood Logs": 1
+        }
+    },
+    "Nitrocellulose": {
+        "type": "Refined",
+        "requires": {
+            "Plant Fibers": 1
+        }
+    },
+    "Carbon Substrate": {
+        "type": "Refined",
+        "requires": {
+            "Plant Fibers": 4,
+            "Stone Dust": 1
+        }
+    },
+    "Magnesium Powder": {
+        "type": "Refined",
+        "requires": {
+            "Magnesium Ore": 5
+        }
+    },
+    "Stone Dust": {
+        "type": "Refined",
+        "requires": {
+            "Crushed Stone": 5
+        }
+    },
+    "Fuel Pack": {
+        "type": "Fuel",
+        "requires": {
+            "Promethium Pellets": 10
+        }
+    },
+    "Large Fuel Pack": {
+        "type": "Fuel",
+        "requires": {
+            "Promethium Pellets": 50
+        }
+    },
+    "Fusion Cell": {
+        "type": "Fuel",
+        "requires": {
+            "Promethium Pellets": 50,
+            "Hydrogen Bottle": 10
+        }
+    },
+    "Steel Plate": {
+        "type": "Component",
+        "requires": {
+            "Iron Ingot": 2
+        }
+    },
+    "Energy Matrix": {
+        "type": "Component",
+        "requires": {
+            "Cobalt Ingot": 2,
+            "Copper Ingot": 1,
+            "Silicon Ingot": 1
+        }
+    },
+    "Electronics": {
+        "type": "Component",
+        "requires": {
+            "Copper Ingot": 2,
+            "Silicon Ingot": 1
+        }
+    },
+    "Glass Plate": {
+        "type": "Component",
+        "requires": {
+            "Silicon Ingot": 1
+        }
+    },
+    "Optical Fiber": {
+        "type": "Component",
+        "requires": {
+            "Silicon Ingot": 1
+        }
+    },
+    "Mechanical Components": {
+        "type": "Component",
+        "requires": {
+            "Steel Plate": 1
+        }
+    },
+    "Nanotubes": {
+        "type": "Component",
+        "requires": {
+            "Carbon Substrate": 1
+        }
+    },
+    "Titanium Rods": {
+        "type": "Component",
+        "requires": {
+            "Titanium Ore": 5
+        }
+    },
+    "Titanium Plates": {
+        "type": "Component",
+        "requires": {
+            "Titanium Rods": 5
+        }
+    },
+    "Aluminum Powder": {
+        "type": "Component",
+        "requires": {
+            "Aluminum Ore": 5
+        }
+    },
+    "Aluminum Coil": {
+        "type": "Component",
+        "requires": {
+            "Aluminum Powder": 5
+        }
+    },
+    "Platinum Ingots": {
+        "type": "Component",
+        "requires": {
+            "Platinum Ore": 5
+        }
+    },
+    "Platinum Bar": {
+        "type": "Component",
+        "requires": {
+            "Platinum Ingots": 1
+        }
+    },
+    "Computer": {
+        "type": "Component",
+        "requires": {
+            "Steel Plate": 1,
+            "Optical Fiber": 1,
+            "Electronics": 2
+        }
+    },
+    "Motor": {
+        "type": "Component",
+        "requires": {
+            "Steel Plate": 2,
+            "Nanotubes": 3,
+            "Electronics": 1
+        }
+    },
+    "Cobalt Alloy": {
+        "type": "Component",
+        "requires": {
+            "Cobalt Ingot": 3,
+            "Iron Ingot": 2
+        }
+    },
+    "Sathium Plates": {
+        "type": "Component",
+        "requires": {
+            "Sathium Ingot": 5
+        }
+    },
+    "Capacitor Device": {
+        "type": "Component",
+        "requires": {
+            "Oscillator": 4,
+            "Nanotubes": 3,
+            "Steel Plate": 3
+        }
+    },
+    "Oscillator": {
+        "type": "Component",
+        "requires": {
+            "Neodymium Ingot": 5,
+            "Cobalt Ingot": 2,
+            "Titanium Rods": 2
+        }
+    },
+    "Flux Coil": {
+        "type": "Component",
+        "requires": {
+            "Titanium Rods": 2,
+            "Neodymium Ingot": 5,
+            "Cobalt Ingot": 2
+        }
+    },
+    "Power Coil": {
+        "type": "Component",
+        "requires": {
+            "Erestrum Ingot": 8,
+            "Zascosium Ingot": 8,
+            "Flux Coil": 1
+        }
+    },
+    "Gold Coins": {
+        "type": "Component",
+        "requires": {
+            "Gold Ingot": 1
+        }
+    },
+    "Hydrogen Bottle": {
+        "type": "Component",
+        "requires": {
+            "Water Container": 5,
+            "Steel Plate": 2
+        }
+    },
+    "Bio Fuel": {
+        "type": "Component",
+        "requires": {
+            "Plant Fibers": 10
+        }
+    },
+    "Small Optronic Bridge": {
+        "type": "Component",
+        "requires": {
+            "Gold Ingot": 15,
+            "Electronics": 125,
+            "Oscillator": 80
+        }
+    },
+    "Small Optronic Matrix": {
+        "type": "Component",
+        "requires": {
+            "Gold Ingot": 20,
+            "Computer": 100,
+            "Energy Matrix": 20
+        }
+    },
+    "Large Optronic Bridge": {
+        "type": "Component",
+        "requires": {
+            "Gold Ingot": 15,
+            "Small Optronic Bridge": 1,
+            "Oscillator": 80,
+            "Zascosium Alloy": 50
+        }
+    },
+    "Large Optronic Matrix": {
+        "type": "Component",
+        "requires": {
+            "Gold Ingot": 20,
+            "Small Optronic Matrix": 1,
+            "Power Coil": 10,
+            "Erestrum Gel": 20
+        }
+    },
+    "Sensors and Signals": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Electronics": 2,
+                "Mechanical Components": 2
+            }
+        }
+    },
+    "LCD Screens": {
+        "type": "Module",
+        "requires": {
+            "ALL": {
+                "Electronics": 3,
+                "Carbon Substrate": 2,
+                "Computer": 2
+            }
+        }
+    },
+    "Core": {
+        "type": "Module",
+        "requires": {
+            "ALL": {
+                "Steel Plate": 6,
+                "Electronics": 4,
+                "Computer": 5,
+                "Optical Fiber": 3
+            }
+        }
+    },
+    "Automatic Doors": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 2,
+                "Electronics": 2,
+                "Steel Plate": 1
+            }
+        }
+    },
+    "Armored Automatic Doors": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 2,
+                "Electronics": 2,
+                "Cobalt Alloy": 5,
+                "Titanium Plates": 3
+            }
+        }
+    },
+    "Forcefields": {
+        "type": "Module",
+        "requires": {
+            "ALL": {
+                "Capacitor Device": 1,
+                "Energy Matrix": 1,
+                "Oscillator": 4
+            }
+        }
+    },
+    "Manual Doors": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Mechanical Components": 4,
+                "Electronics": 3,
+                "Steel Plate": 2
+            }
+        }
+    },
+    "Shutter Doors": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 20,
+                "Motor": 1,
+                "Optical Fiber": 2,
+                "Electronics": 2,
+                "Steel Plate": 4
+            },
+            "HV,SV": {
+                "Mechanical Components": 10,
+                "Motor": 1,
+                "Optical Fiber": 2,
+                "Electronics": 2,
+                "Steel Plate": 2
+            }
+        }
+    },
+    "Hangar Doors": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 20,
+                "Motor": 4,
+                "Energy Matrix": 1,
+                "Electronics": 4,
+                "Steel Plate": 30
+            }
+        }
+    },
+    "Boarding Ramps": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 20,
+                "Motor": 2,
+                "Energy Matrix": 1,
+                "Electronics": 4,
+                "Steel Plate": 10
+            }
+        }
+    },
+    "Ramps": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 20,
+                "Motor": 2,
+                "Electronics": 4
+            },
+            "HV,SV": {
+                "Steel Plate": 10,
+                "Motor": 1,
+                "Electronics": 2
+            }
+        }
+    },
+    "Blast Door Blocks": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 16,
+                "Motor": 6,
+                "Flux Coil": 2,
+                "Cobalt Alloy": 25,
+                "Electronics": 6,
+                "Sathium Plates": 30
+            }
+        }
+    },
+    "Elevator Blocks": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 2,
+                "Electronics": 1,
+                "Optical Fiber": 4
+            }
+        }
+    },
+    "ATM": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Electronics": 3,
+                "Steel Plate": 12,
+                "Computer": 2,
+                "Energy Matrix": 1
+            }
+        }
+    },
+    "Armor Locker": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Electronics": 3,
+                "Steel Plate": 25,
+                "Computer": 2
+            },
+            "HV,SV": {
+                "Electronics": 2,
+                "Steel Plate": 25,
+                "Computer": 2
+            }
+        }
+    },
+    "Wireless Connection": {
+        "type": "Module",
+        "requires": {
+            "ALL": {
+                "Electronics": 3,
+                "Optical Fiber": 5,
+                "Computer": 1
+            }
+        }
+    },
+    "Detector": {
+        "type": "Module",
+        "requires": {
+            "HV": {
+                "Electronics": 1,
+                "Optical Fiber": 2
+            },
+            "SV": {
+                "Electronics": 2,
+                "Optical Fiber": 4
+            },
+            "CV": {
+                "Electronics": 12,
+                "Optical Fiber": 20,
+                "Computer": 6,
+                "Cobalt Alloy": 24,
+                "Energy Matrix": 4,
+                "Titanium Plates": 15
+            }
+        }
+    },
+    "Repair Station": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Power Coil": 1,
+                "Energy Matrix": 1,
+                "Zascosium Alloy": 5,
+                "Optical Fiber": 10,
+                "Nanotubes": 10
+            }
+        }
+    },
+    "Small Constructor": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Computer": 1,
+                "Steel Plate": 3,
+                "Mechanical Components": 5,
+                "Optical Fiber": 2,
+                "Motor": 1
+            },
+            "HV": {
+                "Computer": 2,
+                "Steel Plate": 4,
+                "Mechanical Components": 8,
+                "Optical Fiber": 3,
+                "Motor": 1
+            }
+        }
+    },
+    "Large Constructor": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Computer": 2,
+                "Steel Plate": 5,
+                "Mechanical Components": 10,
+                "Optical Fiber": 4,
+                "Motor": 2
+            }
+        }
+    },
+    "Advanced Constructor": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 10,
+                "Optical Fiber": 4,
+                "Mechanical Components": 10,
+                "Motor": 2,
+                "Computer": 4,
+                "Energy Matrix": 5,
+                "Cobalt Alloy": 50,
+                "Flux Coil": 10
+            }
+        }
+    },
+    "Deconstructor": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Steel Plate": 5,
+                "Mechanical Components": 10,
+                "Motor": 2,
+                "Computer": 2,
+                "Energy Matrix": 5,
+                "Cobalt Alloy": 50,
+                "Flux Coil": 10
+            }
+        }
+    },
+    "Furnace": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Capacitor Device": 10,
+                "Energy Matrix": 4,
+                "Titanium Plates": 50,
+                "Motor": 3,
+                "Flux Coil": 5
+            }
+        }
+    },
+    "Repair Console": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Computer": 2,
+                "Power Coil": 4,
+                "Capacitor Device": 10,
+                "Energy Matrix": 4,
+                "Zascosium Alloy": 25,
+                "Cobalt Alloy": 25,
+                "Flux Coil": 5
+            }
+        }
+    },
+    "Repair Bay": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Power Coil": 4,
+                "Titanium Plates": 10,
+                "Steel Plate": 10,
+                "Capacitor Device": 10,
+                "Energy Matrix": 4,
+                "Zascosium Alloy": 25
+            },
+            "CV": {
+                "Power Coil": 4,
+                "Steel Plate": 10,
+                "Sathium Plates": 10,
+                "Capacitor Device": 10,
+                "Energy Matrix": 4,
+                "Zascosium Alloy": 25
+            }
+        }
+    },
+    "Repair Bay T2": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Steel Plate": 10,
+                "Titanium Plates": 10,
+                "Power Coil": 6,
+                "Capacitor Device": 15,
+                "Energy Matrix": 6,
+                "Zascosium Alloy": 40
+            },
+            "CV": {
+                "Steel Plate": 10,
+                "Sathium Plates": 10,
+                "Power Coil": 6,
+                "Capacitor Device": 15,
+                "Energy Matrix": 6,
+                "Zascosium Alloy": 40
+            }
+        }
+    },
+    "Auto Mining Device": {
+        "type": "Deployable",
+        "requires": {
+            "Capacitor Device": 5,
+            "Titanium Plates": 20,
+            "Motor": 4,
+            "Flux Coil": 5,
+            "Auto Miner Core": 1
+        }
+    },
+    "Auto Mining Device T2": {
+        "type": "Deployable",
+        "requires": {
+            "Capacitor Device": 10,
+            "Titanium Plates": 20,
+            "Motor": 4,
+            "Flux Coil": 5,
+            "Zascosium Alloy": 25,
+            "Power Coil": 5,
+            "Auto Miner Core": 1
+        }
+    },
+    "Auto Mining Device T3": {
+        "type": "Deployable",
+        "requires": {
+            "Capacitor Device": 15,
+            "Titanium Plates": 20,
+            "Motor": 4,
+            "Flux Coil": 5,
+            "Zascosium Alloy": 75,
+            "Power Coil": 10,
+            "Auto Miner Core": 1
+        }
+    },
+    "Mobile Constructor": {
+        "type": "Module",
+        "requires": {
+            "SV": {
+                "Computer": 1,
+                "Energy Matrix": 2,
+                "Electronics": 3,
+                "Steel Plate": 25,
+                "Cobalt Alloy": 50
+            }
+        }
+    },
+    "Cargo Boxes": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Steel Plate": 2
+            },
+            "CV,BA": {
+                "Steel Plate": 12
+            }
+        }
+    },
+    "Container Controller": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Electronics": 1,
+                "Steel Plate": 12
+            },
+            "HV,SV": {
+                "Electronics": 1,
+                "Steel Plate": 2
+            }
+        }
+    },
+    "Container Controller - Ore and Wood": {
+        "type": "Module",
+        "requires": {
+            "CV": {
+                "Electronics": 1,
+                "Steel Plate": 12
+            },
+            "HV": {
+                "Electronics": 1,
+                "Steel Plate": 2
+            }
+        }
+    },
+    "Container Controller - Ammo": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 12,
+                "Cobalt Alloy": 5,
+                "Electronics": 1
+                
+            },
+            "HV,SV": {
+                "Electronics": 1,
+                "Steel Plate": 2
+            }
+        }
+    },
+    "Container Extension": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 12
+            },
+            "HV,SV": {
+                "Steel Plate": 2
+            }
+        }
+    },
+    "Ammo Box": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 12,
+                "Mechanical Components": 2
+            }
+        }
+    },
+    "Plant Grow Light": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 5,
+                "Glass Plate": 1,
+                "Optical Fiber": 10
+            }
+        }
+    },
+    "Lights": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 2,
+                "Glass Plate": 1,
+                "Optical Fiber": 5
+            },
+            "HV,SV": {
+                "Steel Plate": 2,
+                "Glass Plate": 1,
+                "Optical Fiber": 2
+            }
+        }
+    },
+    "Flare": {
+        "type": "Module",
+        "requires": {
+            "ALL": {
+                "Steel Plate": 2,
+                "Glass Plate":1 ,
+                "Optical Fiber": 2
+            }
+        }
+    },
+    "Portable Work Light 1": {
+        "type": "Deployable",
+        "requires": {
+            "Steel Plate": 5,
+            "Glass Plate": 1
+        }
+    },
+    "Portable Work Light 2": {
+        "type": "Deployable",
+        "requires": {
+            "Steel Plate": 10,
+            "Glass Plate": 2
+        }
+    },
+    "Spotlights": {
+        "type": "Module",
+        "requires": {
+            "CV,HV,SV": {
+                "Steel Plate": 2,
+                "Glass Plate": 1,
+                "Optical Fiber": 5
+            }
+        }
+    },
+    "Clone Chamber": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Nanotubes": 2,
+                "Computer": 1,
+                "Steel Plate": 10
+            },
+            "HV": {
+                "Nanotubes": 1,
+                "Computer": 1,
+                "Steel Plate": 5
+            }
+        }
+    },
+    "Medical Devices": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 6,
+                "Nanotubes": 2,
+                "Computer": 2,
+                "Optical Fiber": 3
+            },
+            "HV": {
+                "Mechanical Components": 3,
+                "Nanotubes": 1,
+                "Computer": 1,
+                "Optical Fiber": 2
+            }
+        }
+    },
+    "Ventilators": {
+        "type": "Module",
+        "requires": {
+            "ALL": {
+                "Steel Plate": 12,
+                "Optical Fiber": 3,
+                "Motor": 1
+            }
+        }
+    },
+    "Small O2 Tank": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 4,
+                "Steel Plate": 12
+            }
+        }
+    },
+    "Large O2 Tank": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 8,
+                "Steel Plate": 24,
+                "Energy Matrix": 1,
+                "Cobalt Alloy": 5
+            }
+        }
+    },
+    "O2 Station": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 8,
+                "Computer": 3,
+                "Nanotubes": 5
+            },
+            "SV,HV": {
+                "Mechanical Components": 6,
+                "Computer": 2,
+                "Nanotubes": 2
+            }
+        }
+    },
+    "Water Generator": {
+        "type": "Deployable",
+        "requires": {
+            "Steel Plate": 15,
+            "Computer": 1,
+            "Motor": 2,
+            "Optical Fiber": 1
+        }
+    },
+    "Fridge": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Electronics": 3,
+                "Steel Plate": 12,
+                "Nanotubes": 2
+            }
+        }
+    },
+    "Fridges": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Electronics": 3,
+                "Steel Plate": 12,
+                "Optical Fiber": 10,
+                "Nanotubes": 2
+            }
+        }
+    },
+    "Food Processor": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Computer": 2,
+                "Electronics": 3,
+                "Steel Plate": 25,
+                "Optical Fiber": 3,
+                "Nanotubes": 2
+            }
+        }
+    },
+    "Solar Panels": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Glass Plate": 3,
+                "Steel Plate": 3,
+                "Optical Fiber": 1
+            }
+        }
+    },
+    "Solar Panels - Small": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Glass Plate": 2,
+                "Steel Plate": 2,
+                "Optical Fiber": 1
+            }
+        }
+    },
+    "Capacitor - Solar": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Electronics": 3,
+                "Optical Fiber": 1,
+                "Steel Plate": 4,
+                "Nanotubes": 2
+            }
+        }
+    },
+    "Small Generator": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Steel Plate": 20,
+                "Mechanical Components": 10,
+                "Motor": 1,
+                "Electronics": 10,
+                "Computer": 3
+            }
+        }
+    },
+    "Generator - Small": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Steel Plate": 10,
+                "Motor": 1,
+                "Electronics": 2
+            }
+        }
+    },
+    "Generator": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Steel Plate": 20,
+                "Motor": 1,
+                "Electronics": 3,
+                "Computer": 1
+            }
+        }
+    },
+    "Fuel Tank - Small": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Electronics": 1,
+                "Steel Plate": 5,
+                "Optical Fiber": 1
+            }
+        }
+    },
+    "Fuel Tank": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Electronics": 3,
+                "Steel Plate": 7,
+                "Optical Fiber": 2
+            }
+        }
+    },
+    "Fuel Tank - T1": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Electronics": 5,
+                "Steel Plate": 15,
+                "Optical Fiber": 4
+            }
+        }
+    },
+    "Fuel Tank - T2": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Electronics": 10,
+                "Cobalt Alloy": 30,
+                "Steel Plate": 30,
+                "Optical Fiber": 8
+            }
+        }
+    },
+    "Fuel Tank - T3": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Electronics": 20,
+                "Cobalt Alloy": 40,
+                "Sathium Plates": 30,
+                "Optical Fiber": 16
+            }
+        }
+    },
+    "Large Generator - T1": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 20,
+                "Electronics": 20,
+                "Titanium Plates": 12,
+                "Motor": 2,
+                "Computer": 4,
+                "Capacitor Device": 2,
+                "Cobalt Alloy": 10
+            }
+        }
+    },
+    "Large Generator - T2": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Mechanical Components": 30,
+                "Electronics": 30,
+                "Sathium Plates": 15,
+                "Motor": 3,
+                "Computer": 5,
+                "Capacitor Device": 4,
+                "Cobalt Alloy": 15,
+                "Flux Coil": 10,
+                "Zascosium Alloy": 15
+            }
+        }
+    },
+    "Gravity Generator": {
+        "type": "Module",
+        "requires": {
+            "CV,BA": {
+                "Motor": 2,
+                "Energy Matrix": 2,
+                "Capacitor Device": 2,
+                "Mechanical Components": 5,
+                "Flux Coil": 5
+            }
+        }
+    },
+    "Warp Drive": {
+        "type": "Module",
+        "requires": {
+            "CV": {
+                "Energy Matrix": 2,
+                "Oscillator": 16,
+                "Sathium Plates": 100,
+                "Flux Coil": 20,
+                "Capacitor Device": 10
+            },
+            "SV": {
+                "Energy Matrix": 10,
+                "Steel Plate": 20,
+                "Nanotubes": 20,
+                "Cobalt Alloy": 50
+            }
+        }
+    },
+    "Teleporter": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Energy Matrix": 6,
+                "Oscillator": 16,
+                "Flux Coil": 20,
+                "Capacitor Device": 10,
+                "Elemental Pentaxid": 100
+            },
+            "CV": {
+                "Energy Matrix": 4,
+                "Oscillator": 10,
+                "Flux Coil": 12,
+                "Capacitor Device": 5,
+                "Elemental Pentaxid": 50
+            }
+        }
+    }
+}

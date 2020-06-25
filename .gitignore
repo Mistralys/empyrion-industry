@@ -1,0 +1,8 @@
+
+config-local.php
+vendor/
+js/cachekey.txt
+js/locale-de.js
+js/locale-fr.js
+js/md5.min.js
+js/translator.js
