@@ -41,7 +41,7 @@ class Page_Materials extends Page
         foreach($all as $material)
         {
             $grid->addRow(
-                $material->getName(), 
+                '<a href="'.$material->getURLView().'">'.$material->getName().'</a>', 
                 $material->getTypeLabel(),
                 $material->getPlaceablesForList()
             );
