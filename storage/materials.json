@@ -1192,5 +1192,139 @@
                 "Elemental Pentaxid": 50
             }
         }
+    },
+    "Polarized Hull Shield": {
+        "type": "Module",
+        "requires": {
+            "BA": {
+                "Energy Matrix": 2,
+                "Oscillator": 16,
+                "Capacitor Device": 10,
+                "Flux Coil": 20,
+                "Mechanical Components": 10,
+                "Power Coil": 3
+            },
+            "CV": {
+                "Energy Matrix": 2,
+                "Oscillator": 8,
+                "Capacitor Device": 10,
+                "Mechanical Components": 10,
+                "Flux Coil": 20,
+                "Power Coil": 3
+            },
+            "SV": {
+                "Energy Matrix": 1,
+                "Oscillator": 8,
+                "Capacitor Device": 5,
+                "Mechanical Components": 2,
+                "Flux Coil": 5,
+                "Power Coil": 1
+            },
+            "HV": {
+                "Energy Matrix": 1,
+                "Oscillator": 8,
+                "Capacitor Device": 5,
+                "Mechanical Components": 2,
+                "Flux Coil": 5,
+                "Power Coil": 1
+            }
+        }
+    },
+    "Pentaxid Tank": {
+        "type": "Module",
+        "requires": {
+            "BA,CV": {
+                "Nanotubes": 20,
+                "Titanium Plates": 10,
+                "Energy Matrix": 6,
+                "Capacitor Device": 5,
+                "Flux Coil": 2
+            },
+            "SV,HV": {
+                "Nanotubes": 10,
+                "Steel Plate": 10,
+                "Energy Matrix": 4,
+                "Cobalt Alloy": 50
+            }
+        }
+    },
+    "Cockpits": {
+        "type": "Module",
+        "requires": {
+            "CV": {
+                "Electronics": 3,
+                "Mechanical Components": 40,
+                "Glass Plate": 5,
+                "Computer": 6,
+                "Flux Coil": 10
+            },
+            "SV,HV": {
+                "Electronics": 3,
+                "Mechanical Components": 5,
+                "Glass Plate": 4,
+                "Computer": 2,
+                "Optical Fiber": 1
+            }
+        }
+    },
+    "Cockpits - Armored": {
+        "type": "Module",
+        "requires": {
+            "HV,SV": {
+                "Electronics": 5,
+                "Mechanical Components": 7,
+                "Optical Fiber": 2,
+                "Computer": 3,
+                "Glass Plate": 8,
+                "Cobalt Alloy": 10,
+                "Titanium Plates": 10
+            }
+        }
+    },
+    "Ground Repulsor Engine": {
+        "type": "Module",
+        "requires": {
+            "HV": {
+                "Motor": 1,
+                "Electronics": 1,
+                "Steel Plate": 5,
+                "Optical Fiber": 1
+            }
+        }
+    },
+    "Hover Engine - 1x1": {
+        "type": "Module",
+        "requires": {
+            "HV": {
+                "Motor": 2,
+                "Electronics": 3,
+                "Steel Plate": 10,
+                "Optical Fiber": 3,
+                "Nanotubes": 5
+            }
+        }
+    },
+    "Hover Engine - 2x2": {
+        "type": "Module",
+        "requires": {
+            "HV": {
+                "Motor": 4,
+                "Electronics": 5,
+                "Steel Plate": 25,
+                "Optical Fiber": 6,
+                "Nanotubes": 5
+            }
+        }
+    },
+    "Hover Booster": {
+        "type": "Module",
+        "requires": {
+            "HV": {
+                "Motor": 10,
+                "Electronics": 4,
+                "Steel Plate": 15,
+                "Optical Fiber": 5
+            }
+        }
     }
 }
