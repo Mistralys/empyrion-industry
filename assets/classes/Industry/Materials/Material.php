@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace EmpyrionIndustry\Materials\Material;
 
 use EmpyrionIndustry\Exception;
+use EmpyrionIndustry\Site;
+use AppUtils\ConvertHelper;
 
 abstract class Material
 {
@@ -32,11 +34,17 @@ abstract class Material
         'HV'
     );
     
+   /**
+    * @var string
+    */
+    private $id;
+    
     public function __construct(string $name, array $config)
     {
         $this->name = $name;
         $this->type = $config['type'];
         $this->requires = $config['requires'];
+        $this->id = ConvertHelper::transliterate($name);
     }
     
     public function getName() : string
@@ -109,5 +117,17 @@ abstract class Material
             ),
             self::ERROR_INVALID_PLACEABLE_IDENTIFIER
         );
+    }
+    
+    public function getID() : string
+    {
+        return $this->id;
+    }
+    
+    public function getURLView(array $params=array()) : string
+    {
+        $params['material_id'] = $this->getID();
+        
+        return Site::getInstance()->buildSlugURL('View', $params);
     }
 }
