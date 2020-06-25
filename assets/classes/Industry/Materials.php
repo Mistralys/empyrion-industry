@@ -13,10 +13,13 @@ use EmpyrionIndustry\Materials\Material\Type\Component;
 use EmpyrionIndustry\Materials\Material\Type\Module;
 use EmpyrionIndustry\Materials\Material\Type\Deployable;
 use EmpyrionIndustry\Exception;
+use EmpyrionIndustry\Site;
+use AppUtils\Request;
 
 class Materials
 {
     const ERROR_UNKNOWN_MATERIAL_TYPE = 60001;
+    const ERROR_UNKNOWN_MATERIAL_ID = 60002;
     
    /**
     * @var Industry
@@ -93,6 +96,53 @@ class Materials
                 $config['type']
             ),
             self::ERROR_UNKNOWN_MATERIAL_TYPE
+        );
+    }
+    
+    public function getByRequest() : ?Material 
+    {
+        $request = Request::getInstance();
+        
+        $id = $request->registerParam('material_id')->setAlias()->get();
+        
+        if($this->idExists($id))
+        {
+            return $this->getByID($id);
+        }
+        
+        return null;
+    }
+    
+    public function idExists(string $materialID) : bool
+    {
+        foreach($this->materials as $material)
+        {
+            if($material->getID() === $materialID)
+            {
+                return true;
+            }
+        }
+        
+        return false;
+    }
+    
+    public function getByID(string $materialID) : Material
+    {
+        foreach($this->materials as $material)
+        {
+            if($material->getID() === $materialID)
+            {
+                return $material;
+            }
+        }
+        
+        throw new Exception(
+            'Unknown material',
+            sprintf(
+                'No material found with the ID [%s].',
+                $materialID
+            ),
+            self::ERROR_UNKNOWN_MATERIAL_ID
         );
     }
 }
