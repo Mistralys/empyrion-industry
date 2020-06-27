@@ -38,7 +38,7 @@ class Requirements
         return $this->owner->getIndustry();
     }
     
-    private function parseMaterials(array $materialsList) : void
+    private function parseMaterialsList(array $materialsList) : void
     {
         $container = new MaterialsList($this, $materialsList);
         
@@ -48,11 +48,9 @@ class Requirements
     private function addContainer(AbstractContainer $container) : void
     {
         $this->containers[] = $container;
-        
-        return $container;
     }
     
-    private function parsePlaceables(array $placeableDefs) : array
+    private function parsePlaceables(array $placeableDefs) : void
     {
         $collection = $this->owner->getIndustry()->getPlaceables();
         
@@ -63,8 +61,8 @@ class Requirements
                 $placeableIDs = implode(',', $collection->getIDs());
             }
             
-            $container = new PlaceableMaterialsList($materials);
-            $this->addContainer($materials);
+            $container = new PlaceableMaterialsList($this, $materials);
+            $this->addContainer($container);
             
             $tokens = explode(',', $placeableIDs);
             
@@ -98,7 +96,7 @@ class Requirements
 
     public function getPlaceablesForList() : string
     {
-        return implode(', ', $this->getPlaceables());
+        return implode(', ', $this->getPlaceableIDs());
     }
     
     public function getPlaceableIDs() : array
