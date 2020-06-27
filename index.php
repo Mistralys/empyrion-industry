@@ -1,6 +1,5 @@
 <?php
     
-    
     // your site's classes namespace - required for the microsite to work.
     $siteNS = 'EmpyrionIndustry';
     
@@ -24,5 +23,7 @@
         __DIR__,
         $siteURL
     );
+    
+    /* @var $site EmpyrionIndustry\Site */
     
     $site->display();
