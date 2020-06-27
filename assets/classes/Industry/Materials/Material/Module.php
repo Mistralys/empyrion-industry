@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace EmpyrionIndustry\Materials\Material\Type;
+namespace EmpyrionIndustry\Materials;
 
 use function EmpyrionIndustry\t;
 
-class Module extends Type
+class Module extends AbstractMaterial
 {
     public function getTypeLabel() : string
     {
         return t('Module');
     }
     
-    public function hasMultipleRequirements() : bool
+    public function isPlaceableMaterial() : bool
     {
         return true;
     }
