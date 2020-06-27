@@ -6,6 +6,7 @@ namespace EmpyrionIndustry\Placeables;
 
 use EmpyrionIndustry\Exception;
 use EmpyrionIndustry\Industry;
+use function EmpyrionIndustry\t;
 
 class Placeables
 {
