@@ -76,7 +76,7 @@
         "whereToFind": [
             "Mine ice to get Ice Blocks",
             "From a water generator in water or on snow"
-        ]
+        ],
         "requires": {},
         "requiresOptional": {
             "Ice Blocks": 5
