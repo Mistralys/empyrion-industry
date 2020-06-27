@@ -14,6 +14,7 @@ class Materials
 {
     const ERROR_UNKNOWN_MATERIAL_TYPE = 60001;
     const ERROR_UNKNOWN_MATERIAL_ID = 60002;
+    const ERROR_UNKNOWN_MATERIAL_NAME = 60003;
     
    /**
     * @var Industry
@@ -145,6 +146,26 @@ class Materials
                 $materialID
             ),
             self::ERROR_UNKNOWN_MATERIAL_ID
+        );
+    }
+    
+    public function getByName(string $materialName) : AbstractMaterial
+    {
+        foreach($this->materials as $material)
+        {
+            if($material->getName() === $materialName)
+            {
+                return $material;
+            }
+        }
+        
+        throw new Exception(
+            'Unknown material',
+            sprintf(
+                'No material found with the name [%s].',
+                $materialName
+            ),
+            self::ERROR_UNKNOWN_MATERIAL_NAME
         );
     }
 }
