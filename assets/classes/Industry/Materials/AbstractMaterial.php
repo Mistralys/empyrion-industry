@@ -80,6 +80,16 @@ abstract class AbstractMaterial
         return $this->type;
     }
     
+    public function isRawResource() : bool
+    {
+        return $this instanceof RawResource;
+    }
+    
+    public function isRefined() : bool
+    {
+        return $this instanceof Refined;
+    }
+    
     abstract public function getTypeLabel() : string;
     
     abstract public function isPlaceableMaterial() : bool;
