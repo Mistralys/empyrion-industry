@@ -4,17 +4,11 @@ declare(strict_types=1);
 
 namespace EmpyrionIndustry\Materials;
 
-use EmpyrionIndustry\Industry;
-use AppUtils\FileHelper;
-use EmpyrionIndustry\Materials\Material\Material;
-use EmpyrionIndustry\Materials\Material\Type\Refined;
-use EmpyrionIndustry\Materials\Material\Type\Fuel;
-use EmpyrionIndustry\Materials\Material\Type\Component;
-use EmpyrionIndustry\Materials\Material\Type\Module;
-use EmpyrionIndustry\Materials\Material\Type\Deployable;
-use EmpyrionIndustry\Exception;
-use EmpyrionIndustry\Site;
 use AppUtils\Request;
+use AppUtils\FileHelper;
+
+use EmpyrionIndustry\Industry;
+use EmpyrionIndustry\Exception;
 
 class Materials
 {
@@ -32,7 +26,7 @@ class Materials
     private $dataFile;
     
    /**
-    * @var Material[]
+    * @var AbstractMaterial[]
     */
     private $materials = array();
     
@@ -53,40 +47,48 @@ class Materials
             $this->materials[] = $this->createMaterial($name, $config);
         }
         
-        usort($this->materials, function(Material $a, Material $b) 
+        usort($this->materials, function(AbstractMaterial $a, AbstractMaterial $b) 
         {
             return strnatcasecmp($a->getName(), $b->getName());
         });
     }
     
+    public function getIndustry() : Industry
+    {
+        return $this->industry;
+    }
+    
    /**
     * Retrieves all materials, sorted by name.
     * 
-    * @return Material[]
+    * @return AbstractMaterial[]
     */
     public function getMaterials() : array 
     {
         return $this->materials;
     }
     
-    private function createMaterial(string $name, array $config) : Material
+    private function createMaterial(string $name, array $config) : AbstractMaterial
     {
         switch($config['type'])
         {
             case 'Refined':
-                return new Refined($name, $config);
+                return new Refined($this, $name, $config);
                 
             case 'Fuel':
-                return new Fuel($name, $config);
+                return new Fuel($this, $name, $config);
                 
             case 'Component':
-                return new Component($name, $config);
+                return new Component($this, $name, $config);
                 
             case 'Module':
-                return new Module($name, $config);
+                return new Module($this, $name, $config);
                 
             case 'Deployable':
-                return new Deployable($name, $config);
+                return new Deployable($this, $name, $config);
+                
+            case 'RawResource':
+                return new RawResource($this, $name, $config);
         }
         
         throw new Exception(
@@ -99,7 +101,7 @@ class Materials
         );
     }
     
-    public function getByRequest() : ?Material 
+    public function getByRequest() : ?AbstractMaterial 
     {
         $request = Request::getInstance();
         
@@ -126,7 +128,7 @@ class Materials
         return false;
     }
     
-    public function getByID(string $materialID) : Material
+    public function getByID(string $materialID) : AbstractMaterial
     {
         foreach($this->materials as $material)
         {
