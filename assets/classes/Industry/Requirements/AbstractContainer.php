@@ -31,6 +31,8 @@ abstract class AbstractContainer
         $this->materialsList = $materialsList;
     }
     
+    abstract public function getLabel() : string;
+    
     private function initMaterials() : void
     {
         if(isset($this->materials))
@@ -68,5 +70,17 @@ abstract class AbstractContainer
         $this->initMaterials();
         
         return $this->materials;
+    }
+    
+    public function getRawResources() : array
+    {
+        $collector = new RawResources($this);
+        return $collector->getResources();
+    }
+    
+    public function getRefinedMaterials() : array
+    {
+        $collector = new RefinedMaterials($this);
+        return $collector->getResources();
     }
 }
