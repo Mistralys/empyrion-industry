@@ -1,4 +1,87 @@
 {
+    "Iron Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Copper Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Silicon Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Cobalt Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Neodymium Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Sathium Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Erestrum Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Zascosium Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Gold Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Promethium Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Magnesium Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Titanium Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Aluminum Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Platinum Ore": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Pentaxid": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Wood Logs": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Crushed Stone": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Ice Blocks": {
+        "type": "RawResource",
+        "requires": {}
+    },
+    "Water Container": {
+        "type": "RawResource",
+        "whereToFind": [
+            "Mine ice to get Ice Blocks",
+            "From a water generator in water or on snow"
+        ]
+        "requires": {},
+        "requiresOptional": {
+            "Ice Blocks": 5
+        }
+    },
     "Iron Ingot": {
         "type": "Refined",
         "requires": {
@@ -82,12 +165,6 @@
         "type": "Refined",
         "requires": {
             "Promethium Ore": 1
-        }
-    },
-    "Water Container": {
-        "type": "Refined",
-        "requires": {
-            "Ice Blocks": 5
         }
     },
     "Purified Water": {
@@ -314,7 +391,7 @@
         }
     },
     "Bio Fuel": {
-        "type": "Component",
+        "type": "Fuel",
         "requires": {
             "Plant Fibers": 10
         }
